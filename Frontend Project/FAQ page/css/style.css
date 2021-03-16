@@ -1,0 +1,1373 @@
+body header {
+  display: block;
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
+  z-index: 900;
+  padding: 5px 15px;
+}
+
+body header .navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .navBar i {
+  font-size: 25px;
+}
+
+body header .navBar .header {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 14%;
+          flex: 0 0 14%;
+}
+
+body header .navBar .header .hamburgerMenu {
+  display: none;
+}
+
+body header .navBar .header .logo {
+  width: 200px;
+}
+
+body header .navBar .header .logo img {
+  max-width: 100%;
+}
+
+body header .navBar .menu {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 49%;
+          flex: 0 0 49%;
+}
+
+body header .navBar .menu .headings {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body header .navBar .menu .headings li {
+  display: inline-block;
+  line-height: 50px;
+  margin-left: 25px;
+  padding-bottom: 20px;
+}
+
+body header .navBar .menu .headings li:hover .menuOpening {
+  margin-top: 17px;
+  visibility: visible;
+  opacity: 1;
+}
+
+body header .navBar .menu .headings li a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #191919;
+  position: relative;
+  text-transform: capitalize;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+body header .navBar .menu .headings li .menuOpening {
+  position: absolute;
+  z-index: 500;
+  background-color: #fff;
+  min-width: 200px;
+  max-width: 300px;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  padding: 20px 30px 20px 0px;
+  margin-top: 25px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+body header .navBar .menu .headings li .menuOpening ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body header .navBar .menu .headings li .menuOpening ul li {
+  line-height: 1;
+}
+
+body header .navBar .menu .headings li .menuOpening ul li .a {
+  display: inline-block;
+  padding: 10px 0;
+  font-size: 12px;
+  color: #787878;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  width: 105px;
+  text-decoration: none;
+}
+
+body header .navBar .menu .headings li .menuOpening ul li .a:hover {
+  color: #17a8a3;
+}
+
+body header .navBar .menu .headings li .menuOpening ul .li .aSpan span {
+  padding-left: 20px;
+}
+
+body header .navBar .menu .headings li .menuOpening ul .li .list {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 8%;
+          flex: 0 0 8%;
+}
+
+body header .navBar .menu .headings li .menuOpening ul .li .list ul {
+  display: none;
+  position: absolute;
+  margin-left: 50px;
+  z-index: 2;
+}
+
+body header .navBar .menu .headings li .menuOpening ul .li .list ul li {
+  width: 105px;
+  background-color: #fff;
+}
+
+body header .navBar .menu .headings li .menuOpening ul .li .list ul li a {
+  text-decoration: none;
+  position: relative;
+}
+
+body header .navBar .menu .headings li .menuOpening ul .li .list ul li a:hover {
+  color: #17a8a3;
+}
+
+body header .navBar .menu .headings li .menuOpening ul .li:hover ul {
+  display: block !important;
+}
+
+body header .navBar .menu .headings li .menuOpening ul .li .megaMenu {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
+}
+
+body header .navBar .menu .headings li .menuOpening ul .li .megaMenu .menuContent {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body header .navBar .menu .headings li .menuOpening ul .li .megaMenu .menuContent h5 {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+  width: 55%;
+  line-height: 24px;
+}
+
+body header .navBar .menu .headings li .menuOpening ul .li .megaMenu .menuContent a {
+  display: inline-block;
+  width: 45%;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+body header .navBar .menu .headings li .menuInformation {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  max-width: 2000px;
+  width: 100%;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding: 20px 15px;
+}
+
+body header .navBar .menu .headings li .menuInformation .list {
+  padding: 0 15px;
+  width: 225px;
+  position: relative;
+}
+
+body header .navBar .menu .headings li .menuInformation .list .titlePictures {
+  font-size: 14px;
+  color: #191919;
+  font-weight: 500;
+  line-height: 1;
+  padding: 10px 73px 0px 0px;
+  width: 150px;
+}
+
+body header .navBar .menu .headings li .menuInformation .list .titlePictures:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+body header .navBar .menu .headings li .menuInformation .list img {
+  margin-right: 15px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+body header .navBar .menu .headings li .menuInformation .list ul {
+  position: relative;
+  left: -65px;
+  text-align: left;
+}
+
+body header .navBar .menu .headings li .menuInformation .list ul li {
+  line-height: 1;
+  display: block;
+}
+
+body header .navBar .menu .headings li .menuInformation .list ul li a {
+  font-size: 12px;
+  color: #787878;
+  text-decoration: none;
+}
+
+body header .navBar .menu .headings li .menuInformation .list ul li a:hover {
+  color: #17a8a3;
+}
+
+body header .navBar .menu .headings li .menuInformation .list .ul {
+  width: 250px;
+}
+
+body header .navBar .menu .headings li .menuInformation .list .ul .imgInformation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 27px;
+}
+
+body header .navBar .menu .headings li .menuInformation .list .ul .imgInformation img {
+  height: 50px;
+  max-width: 100%;
+}
+
+body header .navBar .menu .headings li .menuInformation .list .ul .imgInformation h5 {
+  line-height: 2;
+  padding-left: 5px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+body header .navBar .menu .headings li .menuInformation .list .ul .detail {
+  color: #17a8a3;
+}
+
+body header .navBar .menu .headings li .menuInformation .list p {
+  padding-left: 90px;
+  font-size: 12px;
+  height: 25px;
+}
+
+body header .navBar .menu .headings li .menuInformation .list p .spanLine {
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+body header .navBar .menu .headings li .menuInformation .list p .spanColor {
+  color: lightcoral;
+}
+
+body header .navBar .menu .headings li .menuInformation .list .menuBorders {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+  -webkit-box-shadow: 0 0 0px 1px #e7e7e7;
+          box-shadow: 0 0 0px 1px #e7e7e7;
+  border: 2px solid #fff;
+}
+
+body header .navBar .menu .headings li .menuInformation .list .color-border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  padding-left: 90px;
+  height: 0px;
+}
+
+body header .navBar .menu .headings li .menuInformation .list .color-border .border-1 {
+  background-color: lightcoral;
+}
+
+body header .navBar .menu .headings li .menuInformation .list .color-border .border-2 {
+  background-color: beige;
+}
+
+body header .navBar .menu .headings li .menuInformation .list .color-border .border-3 {
+  background-color: #fff;
+}
+
+body header .navBar .menu .headings li .menuInformation .list .color-border .border-4 {
+  background-color: darkseagreen;
+}
+
+body header .navBar .menu .headings li .menuInformation .list .color-border .border-5 {
+  background-color: mediumpurple;
+}
+
+body header .navBar .menu .headings li .menuInformation .list .color-border .border-6 {
+  background-color: pink;
+}
+
+body header .navBar .menuRight {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 37%;
+          flex: 0 0 37%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body header .navBar .menuRight a {
+  text-decoration: none;
+  color: #191919;
+  display: inline-block;
+  padding-right: 40px;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+body header .navBar .menuRight a .zero {
+  width: 20px;
+  height: 20px;
+  background-color: #e95144;
+  color: white;
+  border-radius: 50%;
+  top: -17%;
+  position: absolute;
+  left: 20%;
+  text-align: center;
+  font-size: 12px;
+}
+
+body main {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  width: 100vw;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+
+body main h3 {
+  font-size: 20px;
+}
+
+body main .head-side {
+  width: 75%;
+  margin: 0;
+  margin-top: 5%;
+  padding: 0;
+  width: 92%;
+  padding-left: 15px;
+}
+
+body main .head-side .head-support .title-faq {
+  font-size: 30px;
+  margin-bottom: 13px;
+}
+
+body main .head-side .head-support p {
+  padding-left: 0 !important;
+  margin-bottom: 50px;
+}
+
+body main .head-side .head-support p a {
+  border-bottom: 1px solid #09a073;
+}
+
+body main .head-side .breadcrumb {
+  padding: 27px 0 0;
+  list-style: none;
+  background-color: white;
+}
+
+body main .head-side .breadcrumb li {
+  display: inline;
+  color: #6e6d6d;
+  font-size: 12px;
+}
+
+body main .head-side .breadcrumb li a {
+  text-decoration: none;
+  color: #6e6d6d;
+}
+
+body main .head-side .breadcrumb li + li:before {
+  padding: 8px;
+  color: #6e6d6d;
+  content: ">";
+}
+
+body main .head-side p {
+  font-size: 12px;
+  color: #6e6d6d;
+}
+
+body main .head-side p a {
+  color: #09a073;
+}
+
+body main .rightPart .help {
+  display: block;
+  width: 270px;
+  height: 180px;
+  padding: 41px 30px 32px;
+  background-color: #fafafa;
+  z-index: 10;
+}
+
+body main .rightPart .help-title {
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+body main .rightPart .help-title h3 {
+  margin-bottom: 8%;
+}
+
+body main .rightPart .help-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 4%;
+}
+
+body main .rightPart .help-icons .message_us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .rightPart .help-icons .message_us .mess-icon {
+  display: block;
+  margin: 0 auto 10px auto;
+  width: 22px;
+  height: 22px;
+  color: #1e1e1e;
+  fill: #1e1e1e;
+  cursor: pointer;
+}
+
+body main .rightPart .help-icons .message_us .msg {
+  font-size: 12px;
+  color: black;
+  font-weight: 400;
+  border-bottom: 1px solid black;
+}
+
+body main .rightPart .help-icons .contact_us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .rightPart .help-icons .contact_us .mail-icon {
+  display: block;
+  margin: 0 auto 10px auto;
+  width: 22px;
+  height: 22px;
+  color: #1e1e1e;
+  fill: #1e1e1e;
+  cursor: pointer;
+}
+
+body main .rightPart .help-icons .contact_us .cnt {
+  font-size: 12px;
+  color: black;
+  font-weight: 400;
+  border-bottom: 1px solid black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body main .rightPart .openbtn {
+  display: none;
+  position: relative;
+  margin: 0 10px;
+  padding: 0;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+body main .rightPart .openbtn p {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20%;
+}
+
+body main .rightPart .openbtn img {
+  border: 0.5px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+
+body main .rightPart .questions {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 3%;
+  margin-left: 3%;
+  width: 67%;
+}
+
+body main .rightPart .questions .pre-sale-questions .pre-sales-questions_title {
+  margin-left: 6px;
+  margin-right: 0;
+}
+
+body main .rightPart .questions .pre-sale-questions .pre-sales-questions_title h3 {
+  margin-bottom: 15px;
+}
+
+body main .rightPart .questions .pre-sale-questions .faq-cont {
+  width: 100%;
+  margin-bottom: 70px;
+  padding: 0;
+}
+
+body main .rightPart .questions .pre-sale-questions .faq-cont .card {
+  background-color: white;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  color: #807e7e;
+}
+
+body main .rightPart .questions .pre-sale-questions .faq-cont .card .card-header {
+  background-color: white;
+  width: 100%;
+  padding-left: 0;
+  border: none;
+}
+
+body main .rightPart .questions .pre-sale-questions .faq-cont .card .card-header h2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  margin: 0;
+}
+
+body main .rightPart .questions .pre-sale-questions .faq-cont .card .card-header h2 .btn {
+  width: 100%;
+  margin-right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  cursor: pointer;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  margin-left: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  background-color: white;
+  text-decoration: none;
+  color: #1e1f20;
+  font-size: 14px;
+}
+
+body main .rightPart .questions .pre-sale-questions .faq-cont .card .card-header h2 .btn p {
+  width: 100%;
+  text-align: left;
+}
+
+body main .rightPart .questions .pre-sale-questions .faq-cont .card .card-header h2 .btn .mark_1,
+body main .rightPart .questions .pre-sale-questions .faq-cont .card .card-header h2 .btn .mark_2 {
+  height: 30%;
+  padding-right: 15px;
+  margin: 0;
+  background-color: white;
+  display: none;
+}
+
+body main .rightPart .questions .pre-sale-questions .faq-cont .card .card-header h2 .btn .mark_1 p,
+body main .rightPart .questions .pre-sale-questions .faq-cont .card .card-header h2 .btn .mark_2 p {
+  height: 22px;
+  width: 70px;
+  padding: 2px;
+  border-radius: 2px;
+  background-color: #12a0a0;
+  color: white;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+body main .rightPart .questions .pre-sale-questions .faq-cont .card .card-header h2 .btn .plus-minus-toggle_1,
+body main .rightPart .questions .pre-sale-questions .faq-cont .card .card-header h2 .btn .plus-minus-toggle_2 {
+  text-align: right;
+  cursor: pointer;
+  height: 21px;
+  position: relative;
+  width: 0.3%;
+}
+
+body main .rightPart .questions .pre-sale-questions .faq-cont .card .card-header h2 .btn .plus-minus-toggle_1:before, body main .rightPart .questions .pre-sale-questions .faq-cont .card .card-header h2 .btn .plus-minus-toggle_1:after,
+body main .rightPart .questions .pre-sale-questions .faq-cont .card .card-header h2 .btn .plus-minus-toggle_2:before,
+body main .rightPart .questions .pre-sale-questions .faq-cont .card .card-header h2 .btn .plus-minus-toggle_2:after {
+  background: #706e6e;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 16px;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+}
+
+body main .rightPart .questions .pre-sale-questions .faq-cont .card .card-header h2 .btn .plus-minus-toggle_1:after,
+body main .rightPart .questions .pre-sale-questions .faq-cont .card .card-header h2 .btn .plus-minus-toggle_2:after {
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+body main .rightPart .questions .pre-sale-questions .faq-cont .card .card-header h2 .btn .plus-minus-toggle_1.plus:after,
+body main .rightPart .questions .pre-sale-questions .faq-cont .card .card-header h2 .btn .plus-minus-toggle_2.plus:after {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+body main .rightPart .questions .pre-sale-questions .faq-cont .card .card-body {
+  border-left: none;
+  padding-left: 6px;
+}
+
+body main .rightPart .questions .theme-questions {
+  margin-bottom: 100px;
+}
+
+body main .rightPart .questions .theme-questions .theme-questions_title {
+  margin-left: 6px;
+  margin-right: 0;
+}
+
+body main .rightPart .questions .theme-questions .theme-questions_title h3 {
+  margin-bottom: 15px;
+}
+
+body main .rightPart .questions .theme-questions .container {
+  background-color: white;
+  width: 100%;
+  padding-left: 0;
+  border: none;
+}
+
+body main .rightPart .questions .theme-questions .container .panel {
+  background-color: white;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  color: #807e7e;
+}
+
+body main .rightPart .questions .theme-questions .container .panel .panel-heading {
+  background-color: white;
+  width: 100%;
+  padding-left: 0;
+  border: none;
+}
+
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  margin: 0;
+}
+
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .btn-coll {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 15px 0 5px 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  background-color: white;
+  text-decoration: none;
+  color: #343a40;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .btn-coll .paragraph {
+  width: 100%;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: 400;
+  line-height: 2;
+}
+
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .btn-coll .paragraph .space {
+  height: 25px;
+}
+
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .mark_3,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .mark_4,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .mark_5,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .mark_6,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .mark_7,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .mark_8,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .mark_9,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .mark_10,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .mark_11,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .mark_12,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .mark_13,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .mark_14,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .mark_15,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .mark_16 {
+  height: 100%;
+  padding-right: 15px;
+  padding-top: 12px;
+  background-color: white;
+  display: none;
+  vertical-align: middle;
+}
+
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .mark_3 p,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .mark_4 p,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .mark_5 p,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .mark_6 p,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .mark_7 p,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .mark_8 p,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .mark_9 p,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .mark_10 p,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .mark_11 p,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .mark_12 p,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .mark_13 p,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .mark_14 p,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .mark_15 p,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .mark_16 p {
+  height: 22px;
+  width: 70px;
+  margin: 3px 0;
+  padding: 5px 2px;
+  border-radius: 2px;
+  background-color: #12a0a0;
+  color: white;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_3,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_4,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_5,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_6,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_7,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_8,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_9,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_10,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_11,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_12,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_13,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_14,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_15,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_16,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_17 {
+  text-align: right;
+  cursor: pointer;
+  height: 21px;
+  position: relative;
+  width: 0.3%;
+}
+
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_3:before, body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_3:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_4:before,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_4:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_5:before,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_5:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_6:before,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_6:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_7:before,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_7:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_8:before,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_8:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_9:before,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_9:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_10:before,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_10:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_11:before,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_11:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_12:before,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_12:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_13:before,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_13:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_14:before,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_14:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_15:before,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_15:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_16:before,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_16:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_17:before,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_17:after {
+  background: #706e6e;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 16px;
+  -webkit-transition: -webkit-transform 500ms ease;
+  transition: -webkit-transform 500ms ease;
+  transition: transform 500ms ease;
+  transition: transform 500ms ease, -webkit-transform 500ms ease;
+}
+
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_3:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_4:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_5:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_6:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_7:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_8:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_9:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_10:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_11:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_12:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_13:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_14:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_15:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_16:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_17:after {
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_3.plus:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_4.plus:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_5.plus:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_6.plus:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_7.plus:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_8.plus:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_9.plus:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_10.plus:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_11.plus:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_12.plus:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_13.plus:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_14.plus:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_15.plus:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_16.plus:after,
+body main .rightPart .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_17.plus:after {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+body main .rightPart .questions .theme-questions .container .panel-body {
+  border-left: none;
+  padding-left: 6px;
+  margin-bottom: 7px;
+}
+
+body main .rightPart .questions .theme-questions .container .panel-body p {
+  margin: 22px 0 43px 0;
+  line-height: 1.8;
+}
+
+body main .rightPart .questions .theme-questions .container .panel-body p a {
+  text-decoration: none;
+  color: black;
+}
+
+body main .rightPart .questions .theme-questions .container .panel-body p a:hover {
+  color: #6ebbbb;
+}
+
+body main .rightPart .questions .theme-questions .container .panel-body p span {
+  margin-top: 30px;
+}
+
+body main .rightPart .questions .theme-questions .container .panel-body span {
+  margin: 20px 0;
+}
+
+body main .rightPart .questions .ps {
+  text-align: right;
+  margin-top: 35px;
+  color: grey;
+}
+
+body main .rightPart .sidepanel {
+  width: 0;
+  height: 150vh;
+  position: fixed;
+  margin-left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding-top: 60px;
+}
+
+body main .rightPart .sidepanel .text1 {
+  text-align: center;
+}
+
+body main .rightPart .sidepanel .text1 .close-icon {
+  opacity: 0.6;
+  font-weight: 500;
+  padding: 10px 25px 40px;
+  text-transform: uppercase;
+  color: #1e1e1e;
+  font-family: Poppins, sans-serif;
+  background-color: #f5f5f5;
+  text-align: right;
+}
+
+body main .rightPart .sidepanel .text1 .close-icon .closebtn {
+  float: right;
+  color: grey;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+body main .underline-bold {
+  width: 100%;
+  border-bottom: 3px solid black;
+}
+
+body main .underline-tiny {
+  border-bottom: 1px solid #9c9c9c;
+  width: 100%;
+  margin: 0 0 0 5px;
+}
+
+body main .underline-help {
+  border-bottom: 3px solid black;
+  width: 270px;
+  margin-left: 10%;
+}
+
+body footer {
+  font-size: 12px;
+}
+
+body footer .footerr {
+  padding: 42px 0 55px;
+  color: #787878;
+  background-color: #f7f9f9;
+}
+
+body footer .footerr .container-fluid {
+  height: auto;
+}
+
+body footer .footerr .container-fluid .row .col-md-6 .item_logo_1 {
+  display: block;
+  margin-bottom: 26px;
+}
+
+body footer .footerr .container-fluid .row .col-md-6 .item_logo_1 img {
+  width: 160px;
+}
+
+body footer .footerr .container-fluid .row .col-md-6 .item_logo_2 a {
+  color: #1e1e1e;
+}
+
+body footer .footerr .container-fluid .row .item-2 {
+  padding: 0 15px;
+  margin-bottom: 0;
+}
+
+body footer .footerr .container-fluid .row .item-2 h5 {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 500;
+  margin: 0 0 23px 0;
+  padding-top: 28px;
+  color: #1e1e1e;
+}
+
+body footer .footerr .container-fluid .row .item-2 ul {
+  padding: 0;
+}
+
+body footer .footerr .container-fluid .row .item-2 ul li {
+  display: block;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+body footer .footerr .container-fluid .row .item-2 ul li a {
+  color: #787878;
+  text-decoration: none;
+}
+
+body footer .footerr .container-fluid .row .item-2 ul li a:hover {
+  position: relative;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-decoration: underline;
+  color: black;
+}
+
+body footer .footerr .container-fluid .row .item-3 .social-icons {
+  margin: 0 0 25px;
+  padding-top: 3px;
+}
+
+body footer .footerr .container-fluid .row .item-3 .social-icons i {
+  color: #191919;
+  font-size: 23px;
+  margin-right: 8.5px;
+}
+
+body footer .footer_bottom {
+  padding: 35px 0;
+  color: #787878;
+  background-color: white;
+}
+
+body footer .footer_bottom .row {
+  margin-bottom: 15px;
+}
+
+body footer .footer_bottom .row .footer-copyright {
+  display: block;
+  text-align: left;
+  color: inherit;
+  line-height: 28px;
+}
+
+body footer .footer_bottom .row .footer-copyright p {
+  margin: 0 0 15px;
+}
+
+body footer .footer_bottom .row .payment-methods {
+  text-align: center;
+  display: block;
+}
+
+body footer .footer_bottom .row .payment-methods i {
+  font-size: 25px;
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 1025px) {
+  main .head-side {
+    width: 92%;
+    margin-left: 1.5%;
+  }
+  main .title-faq {
+    padding: 0%;
+  }
+  main .help-icons {
+    display: none;
+  }
+  main #faqHelp {
+    display: none;
+  }
+  main #openbtn {
+    display: inline-block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main #openbtn p {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 10px;
+  }
+  main .questions {
+    margin: 0 !important;
+    width: 100%;
+  }
+  main .questions .pre-sale-questions {
+    width: 100%;
+  }
+  main .questions .pre-sale-questions .faq-cont {
+    margin-bottom: 40px;
+  }
+  main .questions .pre-sale-questions .faq-cont .card {
+    width: 100%;
+  }
+  main .questions .pre-sale-questions .faq-cont .card .card-header .btn p {
+    width: 100%;
+  }
+  main .questions .theme-questions .theme-questions_title {
+    padding: 0;
+    width: 100%;
+  }
+  main .questions .theme-questions .container {
+    padding: 0;
+    width: 100%;
+    padding: 20px 0;
+    vertical-align: middle;
+  }
+  main .questions .theme-questions .container .panel .panel-heading {
+    width: 95%;
+    width: 100%;
+  }
+  main .questions .theme-questions .container .panel .panel-heading h4 {
+    width: 100%;
+  }
+  main .questions .theme-questions .container .panel .panel-heading h4 .styling {
+    margin-bottom: 30px;
+    height: 250px;
+  }
+  main .questions .theme-questions .container .panel .panel-heading h4 .btn-coll {
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    vertical-align: middle;
+  }
+  main .questions .theme-questions .container .panel .panel-heading h4 .btn-coll .paragraph {
+    width: 100%;
+    line-height: 1.8;
+    margin-left: 5px;
+    margin-right: 0;
+  }
+  main .questions .theme-questions .container .panel .panel-heading h4 .btn-coll .paragraph .space {
+    height: 30px;
+  }
+  main .questions .theme-questions .container .panel .panel-heading h4 .mark_3,
+  main .questions .theme-questions .container .panel .panel-heading h4 .mark_4,
+  main .questions .theme-questions .container .panel .panel-heading h4 .mark_5,
+  main .questions .theme-questions .container .panel .panel-heading h4 .mark_6,
+  main .questions .theme-questions .container .panel .panel-heading h4 .mark_7,
+  main .questions .theme-questions .container .panel .panel-heading h4 .mark_8,
+  main .questions .theme-questions .container .panel .panel-heading h4 .mark_9,
+  main .questions .theme-questions .container .panel .panel-heading h4 .mark_10,
+  main .questions .theme-questions .container .panel .panel-heading h4 .mark_11,
+  main .questions .theme-questions .container .panel .panel-heading h4 .mark_12,
+  main .questions .theme-questions .container .panel .panel-heading h4 .mark_13,
+  main .questions .theme-questions .container .panel .panel-heading h4 .mark_14,
+  main .questions .theme-questions .container .panel .panel-heading h4 .mark_15,
+  main .questions .theme-questions .container .panel .panel-heading h4 .mark_16 {
+    margin-top: 25px;
+  }
+  main .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_3,
+  main .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_4,
+  main .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_5,
+  main .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_6,
+  main .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_7,
+  main .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_8,
+  main .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_9,
+  main .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_10,
+  main .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_11,
+  main .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_12,
+  main .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_13,
+  main .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_14,
+  main .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_15,
+  main .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_16,
+  main .questions .theme-questions .container .panel .panel-heading h4 .plus-minus-toggle_17 {
+    margin-top: 25px;
+    margin-left: 0;
+  }
+  main .questions .theme-questions .container .panel-body p {
+    line-height: 2;
+    padding-top: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .loginTitle {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .footer-copyright {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  [class*='links'] {
+    display: none;
+  }
+  .item-2 {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .heading {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #787878;
+  }
+  .heading::after {
+    content: attr(data-content) "+";
+    position: absolute;
+    right: 0px;
+  }
+}
+
+@media only screen and (max-width: 1027px) {
+  .menu {
+    display: none;
+  }
+  .navBar::before {
+    content: url(../icons/shopping-bag-solid.svg);
+    position: absolute;
+    width: 20px;
+    height: 25px;
+    right: 3%;
+    top: 35%;
+  }
+  .navBar::after {
+    content: url(../icons/user-regular.svg);
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    top: 35%;
+    right: 6%;
+    padding-right: 10px;
+  }
+  .navBar .menuRight {
+    display: none !important;
+  }
+  .header {
+    padding-left: 37%;
+  }
+  .hamburgerMenu {
+    display: block !important;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+  }
+  .hamburgerMenu .fa-search {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 1167px) {
+  .menuRight {
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .loginTitle {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 1478px) {
+  .menu .headings li {
+    height: 40px;
+    margin-bottom: 0 !important;
+  }
+}

@@ -1,0 +1,960 @@
+@import "variables";
+body {
+    header {
+        display: block;
+        width: 100%;
+        position: fixed;
+        background-color: $background-color;
+        z-index: 900;
+        padding: 5px 15px;
+        .navBar {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+            i {
+                font-size: 25px;
+            }
+            .header {
+                flex: 0 0 14%;
+                .hamburgerMenu {
+                    display: none;
+                }
+                .logo {
+                    width: 200px;
+                    img {
+                        max-width: 100%;
+                    }
+                }
+            }
+            .menu {
+                flex: 0 0 49%;
+                .headings {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    li {
+                        display: inline-block;
+                        line-height: 50px;
+                        margin-left: 25px;
+                        padding-bottom: 20px;
+                        &:hover {
+                            .menuOpening {
+                                margin-top: 17px;
+                                visibility: visible;
+                                opacity: 1;
+                            }
+                        }
+                        a {
+                            text-decoration: none;
+                            font-size: 15px;
+                            font-weight: $font-weight;
+                            color: $primary_color;
+                            position: relative;
+                            text-transform: capitalize;
+                            transition: color 0.3s ease;
+                        }
+                        .menuOpening {
+                            position: absolute;
+                            z-index: 500;
+                            background-color: $background-color;
+                            min-width: 200px;
+                            max-width: 300px;
+                            transition: color 0.3s ease;
+                            padding: 20px 30px 20px 0px;
+                            margin-top: 25px;
+                            opacity: 0;
+                            visibility: hidden;
+                            ul {
+                                display: flex;
+                                flex-direction: column;
+                                li {
+                                    line-height: 1;
+                                    padding-left: 5px;
+                                    .a {
+                                        display: inline-block;
+                                        padding: 10px 0;
+                                        font-size: $font-size-seccond;
+                                        color: $text-color;
+                                        transition: color 0.3s ease;
+                                        text-decoration: none;
+                                        border-bottom: 1px solid;
+                                        width: 105px;
+                                        text-decoration: none;
+                                        &:hover {
+                                            color: $secondary_color;
+                                        }
+                                    }
+                                }
+                                .li {
+                                    .aSpan {
+                                        span {
+                                            padding-left: 20px;
+                                        }
+                                    }
+                                    .list {
+                                        flex: 0 0 8%;
+                                        ul {
+                                            display: none;
+                                            position: absolute;
+                                            margin-left: 50px;
+                                            z-index: 2;
+                                            li {
+                                                width: 105px;
+                                                background-color: $background-color;
+                                                a {
+                                                    text-decoration: none;
+                                                    position: relative;
+                                                    &:hover {
+                                                        color: $secondary_color;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &:hover {
+                                        ul {
+                                            display: block !important;
+                                        }
+                                    }
+                                    .megaMenu {
+                                        flex: 0 0 60%;
+                                        .menuContent {
+                                            justify-content: space-between;
+                                            h5 {
+                                                margin: 0;
+                                                font-size: $font-size-seccond;
+                                                font-weight: 500;
+                                                width: 55%;
+                                                line-height: 24px;
+                                            }
+                                            a {
+                                                display: inline-block;
+                                                width: 45%;
+                                                font-size: $font-size;
+                                                font-weight: 400;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .menuInformation {
+                            left: 50%;
+                            transform: translateX(-50%);
+                            max-width: 2000px;
+                            width: 100%;
+                            padding: 0 20px;
+                            display: flex;
+                            flex-wrap: nowrap;
+                            padding: 20px 15px;
+                            .list {
+                                padding: 0 15px;
+                                width: 225px;
+                                position: relative;
+                                .titlePictures {
+                                    font-size: $font-size;
+                                    color: $primary_color;
+                                    font-weight: 500;
+                                    line-height: 1;
+                                    padding: 10px 73px 0px 0px;
+                                    width: 150px;
+                                    &:hover {
+                                        text-decoration: underline;
+                                        cursor: pointer;
+                                    }
+                                }
+                                img {
+                                    margin-right: 15px;
+                                    max-width: 100%;
+                                    margin-bottom: 20px;
+                                }
+                                ul {
+                                    position: relative;
+                                    left: -65px;
+                                    text-align: left;
+                                    li {
+                                        line-height: 1;
+                                        display: block;
+                                        a {
+                                            font-size: $font-size-seccond;
+                                            color: $text-color;
+                                            text-decoration: none;
+                                            &:hover {
+                                                color: $secondary_color;
+                                            }
+                                        }
+                                    }
+                                }
+                                .ul {
+                                    width: 250px;
+                                    .imgInformation {
+                                        display: flex;
+                                        padding-left: 27px;
+                                        img {
+                                            height: 50px;
+                                            max-width: 100%;
+                                        }
+                                        h5 {
+                                            line-height: 2;
+                                            padding-left: 5px;
+                                            font-size: $font-size-seccond;
+                                            font-weight: 500;
+                                        }
+                                    }
+                                    .detail {
+                                        color: $secondary_color;
+                                    }
+                                }
+                                p {
+                                    padding-left: 90px;
+                                    font-size: $font-size-seccond;
+                                    height: 25px;
+                                    .spanLine {
+                                        text-decoration-line: line-through;
+                                    }
+                                    .spanColor {
+                                        color: lightcoral;
+                                    }
+                                }
+                                .menuBorders {
+                                    width: 20px;
+                                    height: 20px;
+                                    border-radius: 50%;
+                                    margin-right: 5px;
+                                    box-shadow: 0 0 0px 1px #e7e7e7;
+                                    border: 2px solid #fff;
+                                }
+                                .color-border {
+                                    display: flex;
+                                    margin-bottom: 20px;
+                                    padding-left: 90px;
+                                    height: 0px;
+                                    .border-1 {
+                                        background-color: lightcoral;
+                                    }
+                                    .border-2 {
+                                        background-color: beige;
+                                    }
+                                    .border-3 {
+                                        background-color: $background-color;
+                                    }
+                                    .border-4 {
+                                        background-color: darkseagreen;
+                                    }
+                                    .border-5 {
+                                        background-color: mediumpurple;
+                                    }
+                                    .border-6 {
+                                        background-color: pink;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .menuRight {
+                flex: 0 0 37%;
+                display: flex;
+                justify-content: flex-end;
+                a {
+                    text-decoration: none;
+                    color: $primary_color;
+                    display: inline-block;
+                    padding-right: 40px;
+                    padding-bottom: 15px;
+                    position: relative;
+                    .zero {
+                        width: 20px;
+                        height: 20px;
+                        background-color: #e95144;
+                        color: white;
+                        border-radius: 50%;
+                        top: -17%;
+                        position: absolute;
+                        left: 20%;
+                        text-align: center;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    main {
+        font-family: "Poppins", sans-serif;
+        .breadcrumbs {
+            padding-top: 20px;
+            background-color: white;
+            .breadcrumb-list {
+                margin-top: 200px;
+                font-family: "Poppins", sans-serif;
+                font-size: 12px;
+                color: #787878;
+                li {
+                    list-style: none;
+                }
+                .breadcrumb-items {
+                    padding: 5px 0;
+                    line-height: 1;
+                    vertical-align: top;
+                    display: inline;
+                    text-transform: unset;
+                    span {
+                        margin: 0 7px;
+                    }
+                    a {
+                        color: #787878;
+                        font-size: inherit;
+                        text-decoration: none;
+                        margin-right: 7px;
+                    }
+                }
+            }
+        }
+        .blog-news {
+            font-family: "Poppins", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            text-transform: unset;
+            line-height: 1.3;
+            font-size: 34px;
+            margin-bottom: 40px;
+            padding-left: 25px;
+        }
+        .sidebar-search {
+            width: 252px;
+            margin: 0 0 30px 0;
+            .search-heading {
+                font-size: 20px;
+                line-height: 20px;
+                text-transform: capitalize;
+                font-family: "Poppins", sans-serif;
+                font-weight: 500;
+                position: relative;
+                margin-bottom: 27px;
+            }
+            .search-input {
+                position: relative;
+                .form-control {
+                    border: 30px 10px;
+                }
+                input {
+                    color: #787878;
+                    border: 1px solid;
+                    padding-right: 30px;
+                    height: 45px;
+                }
+                .search-icon {
+                    height: 50px;
+                    position: absolute;
+                    right: 0px;
+                    padding: 10px 12px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .sidebar-blog {
+            width: 252px;
+            border: 1px solid black;
+            border-right: none;
+            border-left: none;
+            .sidebar-content {
+                .content-list {
+                    padding-left: 0 !important;
+                    .content-items {
+                        margin-bottom: 8px;
+                        vertical-align: top;
+                        a {
+                            cursor: pointer;
+                            text-transform: capitalize;
+                            color: #787878;
+                            font-weight: 500;
+                            text-decoration: none;
+                            font-size: 12px;
+                            &:hover {
+                                color: rgb(70, 66, 66);
+                            }
+                        }
+                    }
+                }
+            }
+            .blog-heading {
+                margin: 27px 0;
+                font-size: 20px;
+                line-height: 20px;
+                text-transform: capitalize;
+                font-family: Poppins, sans-serif;
+                font-weight: 500;
+                position: relative;
+                cursor: pointer;
+            }
+        }
+        .recentSection {
+            .recent-blog {
+                width: 252px;
+                margin: 20px 0 30px 0;
+                border-bottom: 1px solid black;
+                .recentPosts-list {
+                    .recent-items {
+                        padding-bottom: 30px;
+                        display: flex;
+                        width: 252px;
+                        .recent-posts {
+                            padding-left: 20px;
+                            h5 {
+                                a {
+                                    color: #1e1e1e;
+                                    line-height: 24px;
+                                    padding-top: 3px;
+                                    margin: 0;
+                                    font-weight: 500;
+                                    font-size: 12px;
+                                    text-transform: capitalize;
+                                    text-decoration: none;
+                                }
+                            }
+                            p {
+                                display: inline-block;
+                                line-height: 28px;
+                                font-style: italic;
+                                margin: 3px 0 0;
+                                color: #787878;
+                                font-size: 14px;
+                            }
+                        }
+                        a {
+                            .recent-img {
+                                display: inline-block;
+                                object-fit: cover;
+                                border-radius: 7px;
+                                display: inline-block;
+                                width: 85px;
+                                height: 85px;
+                                border-radius: 10%;
+                            }
+                        }
+                    }
+                }
+                .recent-heading {
+                    margin: 27px 0;
+                    font-size: 20px;
+                    line-height: 20px;
+                    text-transform: capitalize;
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 500;
+                    position: relative;
+                }
+            }
+        }
+        .sellersSection {
+            .best-sellers {
+                width: 252px;
+                margin: 20px 0 30px 0;
+                border-bottom: 1px solid black;
+                .seller-list {
+                    .seller-items {
+                        display: flex;
+                        flex-direction: row;
+                        margin-bottom: 10px;
+                        .product-img {
+                            a {
+                                display: flex;
+                            }
+                        }
+                        .product-content {
+                            display: inline-block;
+                            .product-details {
+                                a {
+                                    text-decoration: none;
+                                }
+                                .productDetails {
+                                    font-size: 13px;
+                                    position: relative;
+                                    font-weight: 500;
+                                    line-height: 15px;
+                                    color: #17a8a3;
+                                }
+                            }
+                            .product-variant {
+                                margin-bottom: 18px;
+                                display: flex;
+                                .beige-variant,
+                                .beige-variant2 {
+                                    display: block;
+                                    background-color: beige;
+                                    width: 19px;
+                                    height: 19px;
+                                    line-height: 15px;
+                                    margin: 0;
+                                    border-radius: 50%;
+                                    cursor: pointer;
+                                    pointer-events: auto;
+                                    background-size: cover;
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    border: 2px solid #fff;
+                                    box-shadow: 0 0 0px 1px #e7e7e7;
+                                    margin-right: 2px;
+                                    margin-left: 5px;
+                                }
+                                .grey-variant {
+                                    display: block;
+                                    background-color: grey;
+                                    width: 19px;
+                                    height: 19px;
+                                    line-height: 15px;
+                                    margin-bottom: 5px;
+                                    margin: 0;
+                                    border-radius: 50%;
+                                    cursor: pointer;
+                                    pointer-events: auto;
+                                    background-size: cover;
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    border: 2px solid #fff;
+                                    box-shadow: 0 0 0px 1px #e7e7e7;
+                                    margin-left: 5px;
+                                }
+                                .white-variant {
+                                    display: block;
+                                    background-color: white;
+                                    border: 1px solid #dadada;
+                                    width: 19px;
+                                    height: 19px;
+                                    line-height: 19px;
+                                    margin: 0;
+                                    border-radius: 50%;
+                                    cursor: pointer;
+                                    pointer-events: auto;
+                                    background-size: cover;
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    margin-left: 5px;
+                                    box-shadow: 0 0 0px 1px #e7e7e7;
+                                }
+                                .lightCoral-variant {
+                                    display: block;
+                                    background-color: lightcoral;
+                                    width: 19px;
+                                    height: 19px;
+                                    line-height: 19px;
+                                    margin: 0;
+                                    border-radius: 50%;
+                                    cursor: pointer;
+                                    pointer-events: auto;
+                                    background-size: cover;
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    border: 2px solid #fff;
+                                    margin-bottom: 5px;
+                                    box-shadow: 0 0 0px 1px #e7e7e7;
+                                }
+                            }
+                            display: block;
+                            padding-left: 20px;
+                            .product-sale {
+                                display: block;
+                                color: #787878;
+                                line-height: 24px;
+                                padding-top: 3px;
+                                margin: 0;
+                                font-weight: 400;
+                                font-size: 14px;
+                                text-transform: capitalize;
+                                text-decoration: none;
+                                .on-sale {
+                                    display: inline-block;
+                                    font-size: 14px;
+                                    text-decoration: line-through;
+                                }
+                                .actual-price {
+                                    display: inline-block;
+                                    font-family: "300" "Poppins", sans-serif;
+                                    font-size: 14px;
+                                    margin-left: 4px;
+                                    color: rgb(255, 86, 86);
+                                    display: inline-block;
+                                }
+                                p {
+                                    display: inline-block;
+                                    padding-left: 4px;
+                                }
+                            }
+                            .product-title {
+                                a {
+                                    color: #1e1e1e;
+                                    line-height: 24px;
+                                    padding-top: 3px;
+                                    margin: 0;
+                                    font-weight: 500;
+                                    font-size: 12px;
+                                    text-transform: capitalize;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                }
+                .sellersHeading {
+                    font-size: 20px;
+                    line-height: 20px;
+                    text-transform: capitalize;
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 500;
+                    position: relative;
+                    margin: 27px 0;
+                    a {
+                        text-decoration: none;
+                        position: absolute;
+                        font-size: 12px;
+                        color: #17a8a3;
+                        right: 0;
+                        border-bottom: 1px solid;
+                        line-height: 1.4;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+        .herbalSection {
+            .herbal-tea {
+                width: 252px;
+                margin: 20px 0 30px 0;
+                border-bottom: 1px solid black;
+                img {
+                    width: 252px;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+        .customSection {
+            .custom-block {
+                width: 252px;
+                margin: 20px 0 30px 0;
+                .block-heading {
+                    margin: 27px 0;
+                    font-size: 20px;
+                    line-height: 20px;
+                    text-transform: capitalize;
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 500;
+                    position: relative;
+                }
+                .block-content {
+                    p {
+                        line-height: 24px;
+                        color: #787878;
+                        // margin: 0 0 15px;
+                        font-size: 12px;
+                        font-family: "Poppins", sans-serif;
+                        font-style: normal;
+                        font-weight: 100;
+                    }
+                }
+            }
+        }
+        #right-side {
+            .leftBorder {
+                border-left: 1px solid #A0A0A0;
+                display: inline;
+                margin: 0 10px;
+            }
+            margin: 0;
+            padding: 0;
+            .article {
+                .single-team {
+                    position: relative;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        background: linear-gradient(to top, #000, transparent);
+                        z-index: 2;
+                        transition: 0.5s;
+                        opacity: 0;
+                    }
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    &:hover::before {
+                        opacity: 0.6;
+                        cursor: pointer;
+                    }
+                }
+                .text {
+                    margin: 30px 0;
+                    padding: 0;
+                    text-align: left;
+                    ul {
+                        padding: 0;
+                        margin: 0;
+                        li {
+                            font-size: 12px;
+                            font-weight: 350;
+                            color: rgb(121, 118, 118);
+                            line-height: 2;
+                            h3 {
+                                margin: 20px 0;
+                                a {
+                                    color: black;
+                                    text-decoration: none;
+                                    &:hover {
+                                        color: #19bdd6;
+                                    }
+                                }
+                            }
+                            p {
+                                a {
+                                    color: #19bdd6;
+                                }
+                            }
+                            span {
+                                margin: 0 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            .nextPrev {
+                margin-top: 30px;
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    float: right;
+                    li {
+                        text-align: center;
+                        margin: 7px;
+                        a {
+                            font-size: 13px;
+                            padding: 10px 17px;
+                            text-decoration: none;
+                            color: #8e8e8e;
+                        }
+                        .previous,
+                        .next {
+                            border: 0.5px solid rgb(216, 213, 213);
+                            cursor: pointer;
+                            &:hover {
+                                background-color: #19bdd6;
+                            }
+                        }
+                        .st {
+                            background-color: #f8f9fa;
+                            // padding: 11px 20px;
+                        }
+                        .nd {
+                            cursor: pointer;
+                            &:hover {
+                                color: #19bdd6;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        font-size: 12px;
+        .footerr {
+            padding: 42px 0 55px;
+            color: #787878;
+            background-color: #f7f9f9;
+            .container-fluid {
+                height: auto;
+                .row {
+                    .col-md-6 {
+                        .item_logo_1 {
+                            display: block;
+                            margin-bottom: 26px;
+                            img {
+                                width: 160px;
+                            }
+                        }
+                        .item_logo_2 {
+                            a {
+                                color: #1e1e1e;
+                            }
+                        }
+                    }
+                    .item-2 {
+                        padding: 0 15px;
+                        margin-bottom: 0;
+                        h5 {
+                            font-size: 16px;
+                            line-height: 25px;
+                            font-weight: 500;
+                            margin: 0 0 23px 0;
+                            padding-top: 28px;
+                            color: #1e1e1e;
+                        }
+                        ul {
+                            padding: 0;
+                            li {
+                                display: block;
+                                margin-bottom: 10px;
+                                list-style: none;
+                                a {
+                                    color: #787878;
+                                    text-decoration: none;
+                                    &:hover {
+                                        position: relative;
+                                        transition: all 0.3s ease;
+                                        text-decoration: underline;
+                                        color: black;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .item-3 {
+                        .social-icons {
+                            margin: 0 0 25px;
+                            padding-top: 3px;
+                            i {
+                                color: #191919;
+                                font-size: 23px;
+                                margin-right: 8.5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer_bottom {
+            padding: 35px 0;
+            color: #787878;
+            background-color: white;
+            .row {
+                margin-bottom: 15px;
+                .footer-copyright {
+                    display: block;
+                    text-align: left;
+                    color: inherit;
+                    line-height: 28px;
+                    p {
+                        margin: 0 0 15px;
+                    }
+                }
+                .payment-methods {
+                    text-align: center;
+                    display: block;
+                    i {
+                        font-size: 25px;
+                        margin-right: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    main {
+        .hamburger {
+            display: none;
+        }
+        #right-side {
+            width: 100%;
+            overflow: hidden;
+        }
+    }
+}
+
+@media screen and(max-width:576px) {
+    .loginTitle {
+        margin-top: 40px;
+    }
+}
+
+@media screen and(max-width: 1100px) {
+    .footer-copyright {
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    [class*='links'] {
+        display: none
+    }
+    ;
+    .item-2 {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .heading {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #787878;
+        &::after {
+            content: attr(data-content)'+';
+            position: absolute;
+            right: 0px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1027px) {
+    .menu {
+        display: none;
+    }
+    .navBar {
+        &::before {
+            content: url(../icons/shopping-bag-solid.svg);
+            position: absolute;
+            width: 20px;
+            height: 25px;
+            right: 3%;
+            top: 35%;
+        }
+        &::after {
+            content: url(../icons/user-regular.svg);
+            position: absolute;
+            width: 30px;
+            height: 25px;
+            top: 35%;
+            right: 6%;
+            padding-right: 10px;
+        }
+        .menuRight {
+            display: none !important;
+        }
+    }
+    .header {
+        padding-left: 37%;
+    }
+    .hamburgerMenu {
+        display: block !important;
+        position: absolute;
+        top: 35%;
+        left: 5%;
+        .fa-search {
+            margin-left: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1167px) {
+    .menuRight {
+        padding-right: 15px;
+    }
+}
+
+@media screen and(max-width:576px) {
+    .loginTitle {
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 1478px) {
+    .menu {
+        .headings {
+            li {
+                height: 40px;
+                margin-bottom: 0 !important;
+            }
+        }
+    }
+}

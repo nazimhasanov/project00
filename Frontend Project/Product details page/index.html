@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product details page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fontawesome-iconpicker/3.2.0/js/fontawesome-iconpicker.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fontawesome-iconpicker/3.2.0/js/fontawesome-iconpicker.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <nav class="navBar">
+                        <div class="header">
+                            <div class="hamburgerMenu">
+                                <i class="fas fa-bars"></i>
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="logo">
+                                <a href=""><img src="./image/logo.webp" alt="" /></a>
+
+                            </div>
+                        </div>
+                        <!-- navbar start -->
+
+                        <div class="menu">
+                            <ul class="headings">
+                                <li>
+                                    <a href="#">TEAS</a>
+                                    <div class="menuOpening  menuInformation">
+                                        <div class="list">
+                                            <h6 class="title">Shop buy</h6>
+                                            <ul>
+                                                <li><a href="#">What's new</a></li>
+                                                <li><a href="#">Best seilling</a></li>
+                                                <li><a href="#">Top rated</a></li>
+                                                <li><a href="#">Most popular</a></li>
+                                                <li><a href="#">Editor's picks</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="list">
+                                            <h6 class="title">Loremica</h6>
+                                            <ul>
+                                                <li><a href="#">Commodos</a></li>
+                                                <li><a href="#">Sarcus</a></li>
+                                                <li><a href="#">Fermentumos</a></li>
+                                                <li><a href="#">Habitasse</a></li>
+                                            </ul>
+                                            <h6 class="title">Milancelos</h6>
+                                            <ul>
+                                                <li><a href="#">Maecenas</a></li>
+                                                <li><a href="#">Malesuada</a></li>
+                                                <li><a href="#">Cosmo lorem</a></li>
+                                                <li><a href="#">Malateas</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="list">
+                                            <h6 class="title">Cosmopolis</h6>
+                                            <ul>
+                                                <li><a href="#">Commodos</a></li>
+                                                <li><a href="#">Sarcus</a></li>
+                                                <li><a href="#">Fermentumos</a></li>
+                                                <li><a href="#">Habitasse</a></li>
+                                            </ul>
+                                            <h6 class="title">Sarcuso</h6>
+                                            <ul>
+                                                <li><a href="#">Maecenas</a></li>
+                                                <li><a href="#">Malesuada</a></li>
+                                                <li><a href="#">Cosmo lorem</a></li>
+                                                <li><a href="#">Malateas</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="list">
+                                            <h6 class="title">Metropolitanos</h6>
+                                            <ul>
+                                                <li><a href="#">Commodos</a></li>
+                                                <li><a href="#">Sarcus</a></li>
+                                                <li><a href="#">Fermentumos</a></li>
+                                                <li><a href="#">Habitasse</a></li>
+                                            </ul>
+                                            <h6 class="title">Dincidunteros</h6>
+                                            <ul>
+                                                <li><a href="#">Dincidunteros</a></li>
+                                                <li><a href="#">Loremous </a></li>
+                                                <li><a href="#">Namdoshemp</a></li>
+                                                <li><a href="#">Solutmades</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="list">
+                                            <h6 class="title">Featured products</h6>
+                                            <ul class="ul">
+                                                <div class="imgInformation">
+                                                    <img src="./image/teaCircle1.webp" alt="" />
+                                                    <h5>Darturein magnis meros laciniado</h5>
+                                                </div>
+                                                <p>
+                                                    <span class="spanLine">$128.00</span>
+                                                    <span> from </span>
+                                                    <span class="spanColor"> $20.00</span>
+                                                </p>
+                                                <div class="color-border">
+                                                    <div class="border-1 menuBorders"></div>
+                                                    <div class="border-2 menuBorders"></div>
+                                                    <div class="border-3 menuBorders"></div>
+                                                </div>
+                                                <p class="detail">+ Details</p>
+                                                <div class="imgInformation">
+                                                    <img src="./image/teaCircle2.webp" alt="" />
+                                                    <h5>Darturein magnis meros laciniado</h5>
+                                                </div>
+                                                <p>
+                                                    <span class="spanLine">$3,000.00</span>
+                                                    <span class="spanColor"> $2,869.00</span>
+                                                </p>
+                                                <div class="color-border">
+                                                    <div class="border-1 menuBorders"></div>
+                                                    <div class="border-4 menuBorders"></div>
+                                                    <div class="border-5 menuBorders"></div>
+                                                    <div class="border-6 menuBorders"></div>
+                                                </div>
+                                                <p class="detail">+ Details</p>
+                                            </ul>
+                                        </div>
+                                        <div class="megaMenu">
+                                            <img src="./image/megaMenu.jpg" alt="">
+                                            <div class="menuContent d-flex" style="justify-content: space-between;">
+                                                <h5 style="font-size: 12px; padding-top: 15px;">Quisque eget turpis vel purus <br> malesuada aliquam de cosmopolis.</h5>
+                                                <a href="#" style="color: #17a8a3; text-decoration: underline;">SHOP NOW</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">TEAWARE</a>
+                                </li>
+                                <li>
+                                    <a href="#">LOOSE LEAF TEA</a>
+                                    <div class="menuOpening  menuInformation">
+                                        <div class="list text-center">
+                                            <h6 class="titlePictures">Black Tea</h6>
+                                            <a href="#"> <img src="./image/menu1.webp" alt=""></a>
+                                            <ul>
+                                                <li><a href="#">Commados</a></li>
+                                                <li><a href="#">Sarcus</a></li>
+                                                <li><a href="#">Milancelos</a></li>
+                                                <li><a href="#">Fermentumos</a></li>
+                                                <li><a href="#">Habitasse</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="list text-center">
+                                            <h6 class="titlePictures">Rooibos</h6>
+                                            <a href="#"><img src="./image/menu2.webp" alt=""></a>
+                                            <ul>
+                                                <li><a href="#">Maecenas</a></li>
+                                                <li><a href="#">Malesuada</a></li>
+                                                <li><a href="#">Cosmo lorem</a></li>
+                                                <li><a href="#">Malateas</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="list text-center">
+                                            <h6 class="titlePictures">Green Tea</h6>
+                                            <a href="#"><img src="./image/menu3.webp" alt=""></a>
+                                            <ul>
+                                                <li><a href="#">Commados</a></li>
+                                                <li><a href="#">Sarcus</a></li>
+                                                <li><a href="#">Milancelos</a></li>
+                                                <li><a href="#">Milancelos</a></li>
+                                                <li><a href="#">Habitasse</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="list text-center">
+                                            <h6 class="titlePictures">Herbal Tea</h6>
+                                            <a href="#"><img src="./image/menu4.webp" alt=""></a>
+                                            <ul>
+                                                <li><a href="#">Maecenas</a></li>
+                                                <li><a href="#">Malesuada</a></li>
+                                                <li><a href="#">Cosmo lorem</a></li>
+                                                <li><a href="#">Malateas</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="list text-center">
+                                            <h6 class="titlePictures">I Love CHAI</h6>
+                                            <a href="#"><img src="./image/menu5.webp" alt=""></a>
+                                            <ul>
+                                                <li><a href="#">Commados</a></li>
+                                                <li><a href="#">Sarcus</a></li>
+                                                <li><a href="#">Milancelos</a></li>
+                                                <li><a href="#">Fermentumos</a></li>
+                                                <li><a href="#">Habitasse</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">TEA BAGS</a>
+                                </li>
+                                <li>
+                                    <a href="#">LOOKBOOK</a>
+                                    <div class="menuOpening">
+                                        <ul>
+                                            <li><a href="#" class="a">Cosmopolis</a></li>
+                                            <li><a href="#" class="a">Sarcus</a></li>
+                                            <li class="li"><a href="#" class="a aSpan">Fermentumo <span>></span></a>
+                                                <div class="list">
+                                                    <ul>
+                                                        <li><a href="#" class="a">Metropolis</a></li>
+                                                        <li><a href="#" class="a">Cosmo loremica</a></li>
+                                                        <li><a href="#" class="a">Malateas</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li><a href="#" class="a">Habitasse</a></li>
+                                            <li><a href="#" class="a">Milancelos</a></li>
+                                            <li><a href="#" class="a">Malesuada</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="../FAQ page/index.html">FAQS</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="menuRight">
+                            <a href="#"><i class="fas fa-search"></i></a>
+                            <a href="../Login page/index.html"><i class="far fa-user"></i></a>
+                            <a href="#"><i class="far fa-heart"></i></a>
+                            <a href="#"><i class="fas fa-shopping-cart"></i>
+                            <span class="zero">0</span>
+                        </a>
+                        </div>
+                        <!-- navbar end -->
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+
+
+    </header>
+
+
+    <main>
+
+        <!-- (Left-Side) Lamcorper Page Heading Start -->
+        <section class="breadcrumb-head">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 col-lg-8">
+                        <ul class="breadcrumb-list">
+                            <li class="breadcrumb-items">
+                                <a href="../Home page/index.html" aria-label="home">Home</a>
+                                <i class="fas fa-chevron-right"></i>
+                            </li>
+                            <li class="breadcrumb-items">
+                                <a href="#" aria-label="link">Home Page</a>
+                                <i class="fas fa-chevron-right"></i>
+                            </li>
+
+                            <li class="breadcrumb-items">
+                                <p>Lamcorper ostique amattis drosele</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--(Left-Side) Section Lamcorper Page Heading End -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <!-- (Left-Side)  Lamcorper Photo-Zoom Section  Start -->
+                    <section class="zoom-product">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-1">
+                                    <div class="small-img">
+                                        <div class="firstSmall">
+                                            <a href="#">
+                                                <img src="./img/1st small.webp" width="97" height="97" alt="small photo" />
+                                            </a>
+                                        </div>
+
+                                        <div class="secondSmall">
+                                            <a href="#">
+                                                <img src="./img/2nd small.webp" width="97" height="97" alt="small photo" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 col-lg-6">
+                                    <div class="bigImg-title">
+                                        <a href="#">
+                                            <div class="zoomImg">
+                                                <div class="bigProduct1" id="bigProduct1">
+                                                    <img src="./img/1st big.webp" width="520" height="550" alt="big photo" class="zoomPhoto" id="" />
+                                                </div>
+
+                                                <div class="bigProduct2" id="bigProduct2">
+                                                    <img src="./img/2nd big.webp" width="520" height="550" alt="big photo" class="zoomPhoto" id="" />
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="custom-block text-center">
+                                            <h3 class="title">Custom CMS Block</h3>
+                                            <div class="content">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis risus leo, elementum in malesuada an darius ut augue. Cras sit amet lectus et justo feugiat euismod sed non erat. Nulla non felis id sit amet eros. Nam suscipit mollis tellus vel malesuada.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- (Right-Side) Add To Cart Section Start -->
+                                <div class="col-md-12 col-lg-5">
+                                    <div class="add-to-cart">
+                                        <form action="#" method="post" id="product-add">
+                                            <div class="product-head" data-id="66">
+                                                <h3 id="prd-name">
+                                                    Lamcorper ostique amattis drosele
+                                                    <i class="bi bi-chevron-right"></i>
+                                                </h3>
+                                                <div class="rev">
+                                                    <p>
+                                                        <i class="bi bi-star-fill ulduz ulduz1" data-no="1"></i>
+                                                        <i class="bi bi-star-fill ulduz ulduz2" data-no="2"></i>
+                                                        <i class="bi bi-star-fill ulduz ulduz3" data-no="3"></i>
+                                                        <i class="bi bi-star-fill ulduz ulduz4" data-no="4"></i>
+                                                        <i class="bi bi-star-fill ulduz ulduz5" data-no="5"></i>
+                                                        <a href="#">1 review</a>
+                                                    </p>
+                                                    <a href="#"><i class="fas fa-fire-alt"></i> 15 sold in last 10hours</a>
+
+
+                                                </div>
+                                            </div>
+                                            <div class="product-spec">
+                                                <table class="spec-table">
+                                                    <tr>
+                                                        <td>Brand:</td>
+                                                        <td>Donatello</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Product Code:</td>
+                                                        <td>RT-0026EARL</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Availability:</td>
+                                                        <td>20 In Stock</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                            <div class="price">
+                                                <p>$69.00</p>
+                                            </div>
+
+                                            <div class="desc">
+                                                <p>
+                                                    Sample heading title Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis risus leo, elementum in malesuada an darius ut augue. Cras...
+                                                </p>
+                                            </div>
+
+                                            <div class="size">
+                                                <p>Size
+                                                    <sum>*</sum> <span>Small</span></p>
+                                                <div class="opt">
+                                                    <a href="#">Small</a>
+                                                </div>
+                                            </div>
+                                            <div class="qty">
+                                                <label for="qty">Quantity:</label>
+                                                <input type="number" class="form-control" name="qty" id="qty" value="1" min="1" />
+                                                <input type="hidden" name="priceForOne" id="priceForOne" value="69.00" />
+                                                <p>Subtotal <span id="total">$69.00</span></p>
+                                            </div>
+                                            <div class="row btns">
+                                                <div class="col-md-6 col-sm-12">
+                                                    <button type="submit" id="addcart" class="btn btn-pro btn-cart">Add to cart </button>
+
+
+                                                </div>
+                                                <div class="col-md-6 col-sm-12">
+                                                    <button type="button" id="addwish" class="btn btn-pro btn-wish wish">
+                                                        <i class="bi bi-heart">Add to Wishlist</i>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <button type="submit" href="#" class="buynow" title="Please first agree terms & conditions" disabled>Buy it now </button>
+
+                                            <div class="form-check termcon">
+                                                <input class="form-check-input" type="checkbox" value="1" id="term" />
+                                                <label class="form-check-label" for="term"><a href="#">I agree with the <span>Terms & conditions</span></a></label>
+
+                                            </div>
+                                            <div class="customer-view">
+                                                243 customers are viewing this product
+                                            </div>
+                                        </form>
+                                        <div class="social-icons1">
+                                            <i class="fab fa-facebook-f"></i>
+                                            <i class="fab fa-twitter"></i>
+                                            <i class="fab fa-pinterest-p"></i>
+                                            <i class="far fa-play-circle"></i>
+                                            <i class="fab fa-gg-circle"></i>
+                                            <i class="fas fa-envelope"></i>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                        <div class="norton">
+                                            <img src="https://cdn.shopify.com/s/files/1/0418/1904/6039/files/security.jpg?v=1596164706" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- (Right-Side) Add To Cart Section End -->
+                        </div>
+                    </section>
+                    <!-- (Left-Side)  Lamcorper Photo-Zoom Section  End -->
+
+                    <!-- (Left-Side) Icon Section Start -->
+
+                    <section class="iconsSecondPage">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="quantityIcons firstIcon">
+                                        <img src="./icons/1st icon.webp" alt="" />
+                                        <h3 class="title">Quantity</h3>
+                                        <div class="description">
+                                            <p>Use 2gr of tea per 150ml of water.</p>
+                                            <a href="#">How to taste tea </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="quantityIcons secondIcon">
+                                        <img src="./icons/2nd icon.webp" alt="" />
+
+                                        <h3 class="title">Temperature</h3>
+                                        <div class="description">
+                                            <p>For the optimum infusion use 85°C
+                                                <185°F> water.</p>
+                                            <p>If you like milk, use water at 100°C
+                                                <212°F>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="quantityIcons thirdIcon">
+                                        <img src="./icons/3rd icon.webp" alt="" />
+                                        <h3 class="title">Brew Time</h3>
+                                        <div class="description">
+                                            <p>Infuse for 1 - 3 minutes, tasting regularly.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="quantityIcons fourthIcon">
+                                        <img src="./icons/4th icon.webp" alt="" />
+                                        <h3 class="title">Enjoy</h3>
+                                        <div class="description">
+                                            <p>Sip hot or top with ice for iced tea</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- (Left-Side) Icon Section End -->
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <!-- Cosmo Milancelos section start -->
+        <section class="cosmoMilancelos">
+            <div class="container-fluid">
+                <div class="picture">
+
+                </div>
+                <img class="picture" src="pictures/Tea.jpg" alt="">
+                <div class="information">
+                    <h4 class="">THE TEA BRIDGE</h4>
+                    <h2 class=" ">Cosmo Milancelos</h2>
+                    <p>Sedcus faucibus an delos sullamcorper mattis drostique des commodo pharetras merui loremos.
+                        <br><br> Nam tempus turpis at metus scelerisque placerat nullam deumantos solicitud felis. Pellentesque diam dolor, cosmo delementum etos lobortis des mollis ut risus.
+                    </p>
+
+                </div>
+
+                <div class="rte">
+                    Phasellus volutpat magna id mauris sodales et ornare urna molestie. Mauris non sem tincidunt, hendrerit nisi quis honcus felis. Suspendisse tempus mi durna in mattis nisl egestas quis. Proin nisi justo consectetur sed lacus an bibendum commodo diam. Praesent
+                    vulputate arcu eros quis accumsan odio malesuada at. Nulla vel ante magna. Cras ultricies nulla porttitor metus cursus malesuada. Sed convallis tempor ante ac semperos. Duis an turpis de nisl ultricies rhoncus. Morbi aliquet sem non
+                    orci lacinia posuere nam eget efficitur de milancelos...
+                </div>
+            </div>
+
+        </section>
+        <!-- Cosmo Milancelos section end -->
+
+        <!-- Collections section start -->
+        <section class="collections">
+            <div class="container-fluid">
+                <div class="col-md-8 offset-md-2">
+                    <div class="row">
+
+                        <div class="col-lg-6">
+                            <div class="single-team">
+                                <img class="picture" src="pictures/circle1.jpg" alt="">
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="">
+                                <div class="content">
+
+                                    <h3 class="title">East Tea Collection</h3>
+
+
+                                    <div class="words">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis risus leo, elementum in malesuada an darius ut augue. Cras sit amet lectus et justo feugiat euismod sed non erat. Nulla non felis id metus bibendum iaculis
+                                            quis sit amet eros.</p>
+                                        <ul>
+
+                                            <li>Lorem ipsum dolor sit amet consectetur adipiscing elito. </li>
+                                            <li>Duis risus leo elementum in malesuada an darius.</li>
+                                            <li>Cras sit amet lectus et justo feugiat deuismodo.</li>
+                                            <li>Nulla non felis id metus bibendum iaculis quis sit amet eros.</li>
+                                        </ul>
+                                    </div>
+
+
+                                    <div class="action">
+                                        <a href="#" class="btn shopButton">Shop East Tea</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="second">
+                        <div class="row">
+
+                            <div class="col-lg-6 order-lg-2 ">
+                                <div class="single-team">
+                                    <img class="picture" src="pictures/circle2.jpg" alt="">
+                                </div>
+
+                            </div>
+                            <div class="col-lg-6 order-lg-1 ">
+                                <div class="content">
+
+                                    <h3 class="title">Black Tea Collection</h3>
+
+
+                                    <div class="words">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis risus leo, elementum in malesuada an darius ut augue. Cras sit amet lectus et justo feugiat euismod sed non erat. Nulla non felis id metus bibendum iaculis
+                                        quis sit amet eros.
+                                        <br><br> Cras ultricies nulla porttitor metus cursus malesuada. Sed convallis tempor ante ac semperos. Duis an turpis de nisl ultricies rhoncus. Morbi aliquet sem non orci lacinia posuere nam eget efficitur de milancelos.</div>
+
+
+                                    <div class="action">
+                                        <a href="#" class="btn shopButton">Shop Black Tea</a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="third">
+                        <div class="row">
+
+                            <div class="col-lg-6  ">
+                                <div class="single-team">
+                                    <img class="video picture" src="pictures/circle3.jpg " alt=" ">
+                                </div>
+
+                                <a data-fancybox href="https://www.youtube.com/watch?v=_9VUPq3SxOc&t=8s" class="fancybox">
+                                    <i class="far fa-play-circle"></i>
+                                </a>
+                            </div>
+                            <div class="col-lg-6 ">
+                                <div class="backColor">
+                                    <div class="owl-carousel owl-theme ">
+                                        <div>
+                                            <div class="info-user">
+                                                <div class="single-team">
+                                                    <img class="profil" src="pictures/profil.webp" alt="">
+                                                </div>
+
+                                                <div class="info">
+                                                    <h4 class="name">Annie Lee</h4>
+                                                    <i>Tea Taster</i>
+                                                </div>
+                                            </div>
+
+                                            <h3 class="title">What Makes It Great...</h3>
+
+                                            <div class="words">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis risus leo, elementum in malesuada an darius ut augue. Cras sit amet lectus et justo feugiat euismod sed non erat. Nulla non felis id metus bibendum
+                                                iaculis quis sit amet eros.
+                                                <br><br> Cras ultricies nulla porttitor metus cursus malesuada. Sed convallis tempor ante ac semperos. Duis an turpis de nisl ultricies rhoncus. Morbi aliquet sem non orci lacinia posuere nam eget efficitur
+                                                de milancelos.
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="info-user">
+                                                <img class="profil2" src="pictures/ptofil2.png" alt="">
+                                                <div class="info">
+                                                    <h4 class="name">Annie Lee</h4>
+                                                    <i>Tea Taster</i>
+                                                </div>
+                                            </div>
+                                            <h3 class="title">Title block</h3>
+                                            <div class="words">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis risus leo, elementum in malesuada an darius ut augue. Cras sit amet lectus et justo feugiat euismod sed non erat. Nulla non felis id metus bibendum
+                                                iaculis quis sit amet eros.
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="info-user">
+                                                <img class="profil2" src="pictures/ptofil2.png" alt="">
+                                                <div class="info">
+                                                    <h4 class="name">Annie Lee</h4>
+                                                    <i>Tea Taster</i>
+                                                </div>
+                                            </div>
+                                            <h3 class="title">Title block</h3>
+                                            <div class="words">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis risus leo, elementum in malesuada an darius ut augue. Cras sit amet lectus et justo feugiat euismod sed non erat. Nulla non felis id metus bibendum
+                                                iaculis quis sit amet eros.
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <!-- Collections section end -->
+
+    </main>
+
+    <footer>
+        <div class="footerr ">
+            <div class="container-fluid">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="row ">
+                        <div class="col-md-6 col-lg-3 ">
+                            <div class="item_logo_1 ">
+                                <img src="https://cdn.shopify.com/s/files/1/0418/1904/6039/files/hl-tea-and-coffee-logo_x40.png?v=1600340174 " alt=" " />
+                            </div>
+                            <div class="item_logo_2 ">
+                                <p style="margin: 0px 0px 28px ">
+                                    685 Market Street,
+                                    <br /> San Francisco, CA 94105,
+                                    <br /> United States
+                                </p>
+                                <p>
+                                    Call us: +1 689 699 TEATEA
+                                    <br /> Email:
+                                    <a href="mailto:support@halothemes.com ">support@halothemes.com</a>
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item-2 col-md-6 col-lg-2 ">
+                            <h5 class="heading " id="heading1 ">Shop</h5>
+                            <div class="links1 ">
+                                <ul>
+                                    <li><a href="# ">Teas</a></li>
+                                    <li><a href="# ">Teaware</a></li>
+                                    <li><a href="# ">Loose Leaf Tea</a></li>
+                                    <li><a href="# ">Tea Bags</a></li>
+                                    <li><a href="# ">Lookbook</a></li>
+                                    <li><a href="# ">Shop By Brand</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item-2 col-md-6 col-lg-2 ">
+                            <h5 class="heading " id="heading2 ">About Us</h5>
+                            <div class="links2 ">
+                                <ul>
+                                    <li id="salam "><a href="../News page/index.html">Blog</a></li>
+                                    <li><a href="# ">Press Releases</a></li>
+                                    <li><a href="# ">About Us</a></li>
+                                    <li><a href="../Contact us page/index.html ">Contact Us</a></li>
+                                    <li><a href="# ">Find A Store</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="item-2 col-md-6 col-lg-2 ">
+                            <h5 class="heading " id="heading3 ">Customer Care</h5>
+                            <div class="links3 ">
+                                <ul>
+                                    <li><a href="# ">Shipping</a></li>
+                                    <li><a href="# ">Returns Policy</a></li>
+                                    <li><a href="# ">Terms And Conditions</a></li>
+                                    <li><a href="# ">Privacy Policy</a></li>
+                                    <li><a href="../FAQ page/index.html">FAQs</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item-2 item-3 col-md-6 col-lg-3 ">
+                            <h5>Follow Us</h5>
+                            <div class="social-icons ">
+                                <a target="_blank " href="https://www.facebook.com/shopify "><i class="fab fa-facebook-square "></i></a>
+                                <a target="_blank " href="https://messenger.com/shopify "><i class="fab fa-facebook-messenger "></i></a>
+                                <a target="_blank " href="https://twitter.com/shopify "><i class="fab fa-twitter "></i></a>
+                                <a target="_blank " href="https://pinterest.com/shopify "><i class="fab fa-pinterest "></i></a>
+                                <a target="_blank " href="https://instagram.com/shopify "><i class="fab fa-instagram "></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer_bottom ">
+            <div class="container-fluid">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="row ">
+                        <div class="col-lg-4 ">
+                            <div class="footer-copyright ">
+                                <p>
+                                    <i class="far fa-copyright "></i> 2020 Tea I Tea Demo. Powered by Shopify. Shopify Themes by HaloThemes.com
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 "></div>
+                        <div class="col-lg-4 ">
+                            <div class="payment-methods ">
+                                <i class="fab fa-cc-visa "></i>
+                                <i class="fab fa-cc-mastercard "></i>
+                                <i class="fab fa-cc-amex "></i>
+                                <i class="fab fa-cc-discover "></i>
+                                <i class="fab fa-cc-mastercard "></i>
+                                <i class="fab fa-cc-paypal "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    <script src="js/main.js "></script>
+</body>
+
+</html>

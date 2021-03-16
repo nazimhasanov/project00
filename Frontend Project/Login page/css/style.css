@@ -1,0 +1,675 @@
+body header {
+  display: block;
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
+  z-index: 20;
+  padding: 5px 15px;
+}
+
+body header .navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .navBar i {
+  font-size: 25px;
+}
+
+body header .navBar .header {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 14%;
+          flex: 0 0 14%;
+}
+
+body header .navBar .header .hamburgerMenu {
+  display: none;
+}
+
+body header .navBar .header .logo {
+  width: 200px;
+}
+
+body header .navBar .header .logo img {
+  max-width: 100%;
+}
+
+body header .navBar .menu {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 49%;
+          flex: 0 0 49%;
+}
+
+body header .navBar .menu .headings {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body header .navBar .menu .headings li {
+  display: inline-block;
+  line-height: 50px;
+  margin-left: 25px;
+  padding-bottom: 20px;
+}
+
+body header .navBar .menu .headings li:hover .menuOpening {
+  margin-top: 17px;
+  visibility: visible;
+  opacity: 1;
+}
+
+body header .navBar .menu .headings li a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #191919;
+  position: relative;
+  text-transform: capitalize;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+body header .navBar .menu .headings li .menuOpening {
+  position: absolute;
+  z-index: 500;
+  background-color: #fff;
+  min-width: 200px;
+  max-width: 300px;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  padding: 20px 30px 20px 0px;
+  margin-top: 25px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+body header .navBar .menu .headings li .menuOpening ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body header .navBar .menu .headings li .menuOpening ul li {
+  line-height: 1;
+  margin-left: 65px;
+}
+
+body header .navBar .menu .headings li .menuOpening ul li .a {
+  display: inline-block;
+  padding: 10px 0;
+  font-size: 12px;
+  color: #787878;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  width: 105px;
+  text-decoration: none;
+}
+
+body header .navBar .menu .headings li .menuOpening ul li .a:hover {
+  color: #17a8a3;
+}
+
+body header .navBar .menu .headings li .menuOpening ul .li .aSpan span {
+  padding-left: 20px;
+}
+
+body header .navBar .menu .headings li .menuOpening ul .li .list {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 8%;
+          flex: 0 0 8%;
+}
+
+body header .navBar .menu .headings li .menuOpening ul .li .list ul {
+  display: none;
+  position: absolute;
+  margin-left: 50px;
+  z-index: 2;
+}
+
+body header .navBar .menu .headings li .menuOpening ul .li .list ul li {
+  width: 105px;
+  background-color: #fff;
+}
+
+body header .navBar .menu .headings li .menuOpening ul .li .list ul li a {
+  text-decoration: none;
+  position: relative;
+}
+
+body header .navBar .menu .headings li .menuOpening ul .li .list ul li a:hover {
+  color: #17a8a3;
+}
+
+body header .navBar .menu .headings li .menuOpening ul .li:hover ul {
+  display: block !important;
+}
+
+body header .navBar .menu .headings li .menuOpening ul .li .megaMenu {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
+}
+
+body header .navBar .menu .headings li .menuOpening ul .li .megaMenu .menuContent {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body header .navBar .menu .headings li .menuOpening ul .li .megaMenu .menuContent h5 {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+  width: 55%;
+  line-height: 24px;
+}
+
+body header .navBar .menu .headings li .menuOpening ul .li .megaMenu .menuContent a {
+  display: inline-block;
+  width: 45%;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+body header .navBar .menu .headings li .menuInformation {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  max-width: 2000px;
+  width: 100%;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding: 20px 15px;
+}
+
+body header .navBar .menu .headings li .menuInformation .list {
+  padding: 0 15px;
+  width: 225px;
+  position: relative;
+}
+
+body header .navBar .menu .headings li .menuInformation .list .titlePictures {
+  font-size: 14px;
+  color: #191919;
+  font-weight: 500;
+  line-height: 1;
+  padding: 10px 73px 0px 0px;
+  width: 150px;
+}
+
+body header .navBar .menu .headings li .menuInformation .list .titlePictures:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+body header .navBar .menu .headings li .menuInformation .list img {
+  margin-right: 15px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+body header .navBar .menu .headings li .menuInformation .list ul {
+  position: relative;
+  left: -65px;
+  text-align: left;
+}
+
+body header .navBar .menu .headings li .menuInformation .list ul li {
+  line-height: 1;
+  display: block;
+}
+
+body header .navBar .menu .headings li .menuInformation .list ul li a {
+  font-size: 12px;
+  color: #787878;
+  text-decoration: none;
+}
+
+body header .navBar .menu .headings li .menuInformation .list ul li a:hover {
+  color: #17a8a3;
+}
+
+body header .navBar .menu .headings li .menuInformation .list .ul {
+  width: 250px;
+}
+
+body header .navBar .menu .headings li .menuInformation .list .ul .imgInformation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 27px;
+}
+
+body header .navBar .menu .headings li .menuInformation .list .ul .imgInformation img {
+  height: 50px;
+  max-width: 100%;
+}
+
+body header .navBar .menu .headings li .menuInformation .list .ul .imgInformation h5 {
+  line-height: 2;
+  padding-left: 5px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+body header .navBar .menu .headings li .menuInformation .list .ul .detail {
+  color: #17a8a3;
+}
+
+body header .navBar .menu .headings li .menuInformation .list p {
+  padding-left: 90px;
+  font-size: 12px;
+  height: 25px;
+}
+
+body header .navBar .menu .headings li .menuInformation .list p .spanLine {
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+body header .navBar .menu .headings li .menuInformation .list p .spanColor {
+  color: lightcoral;
+}
+
+body header .navBar .menu .headings li .menuInformation .list .menuBorders {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+  -webkit-box-shadow: 0 0 0px 1px #e7e7e7;
+          box-shadow: 0 0 0px 1px #e7e7e7;
+  border: 2px solid #fff;
+}
+
+body header .navBar .menu .headings li .menuInformation .list .color-border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  padding-left: 90px;
+  height: 0px;
+}
+
+body header .navBar .menu .headings li .menuInformation .list .color-border .border-1 {
+  background-color: lightcoral;
+}
+
+body header .navBar .menu .headings li .menuInformation .list .color-border .border-2 {
+  background-color: beige;
+}
+
+body header .navBar .menu .headings li .menuInformation .list .color-border .border-3 {
+  background-color: #fff;
+}
+
+body header .navBar .menu .headings li .menuInformation .list .color-border .border-4 {
+  background-color: darkseagreen;
+}
+
+body header .navBar .menu .headings li .menuInformation .list .color-border .border-5 {
+  background-color: mediumpurple;
+}
+
+body header .navBar .menu .headings li .menuInformation .list .color-border .border-6 {
+  background-color: pink;
+}
+
+body header .navBar .menuRight {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 37%;
+          flex: 0 0 37%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body header .navBar .menuRight a {
+  text-decoration: none;
+  color: #191919;
+  display: inline-block;
+  padding-right: 40px;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+body header .navBar .menuRight a .zero {
+  width: 20px;
+  height: 20px;
+  background-color: #e95144;
+  color: white;
+  border-radius: 50%;
+  top: -17%;
+  position: absolute;
+  left: 20%;
+  text-align: center;
+  font-size: 12px;
+}
+
+body main {
+  margin-bottom: 60px;
+}
+
+body main .title {
+  margin-left: 5%;
+  padding-left: 35px;
+}
+
+body main .title .breadCrumb {
+  padding-top: 100px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  color: #787878;
+}
+
+body main .title .breadCrumb a {
+  color: #787878;
+}
+
+body main .title .breadCrumb span {
+  padding: 0 5px;
+}
+
+body main .title .section-header {
+  margin-bottom: 100px;
+}
+
+body main .title .section-header h2 {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+body main .leftPart {
+  padding: 60px;
+}
+
+body main .leftPart .btnLogin {
+  color: #fff;
+  border-color: #17a8a3;
+  background-color: #17a8a3;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+body main .leftPart .btnLogin:hover {
+  background-color: #0f726f;
+}
+
+body main .leftPart .btnCancel {
+  padding: 10px;
+  width: 100%;
+  color: #fff;
+  border-color: #e13f3f;
+  background-color: #e13f3f;
+}
+
+body main .leftPart .btnCancel:hover {
+  background-color: #9e2a36;
+}
+
+body main .newCustomer {
+  background-color: #fafafa;
+  padding: 60px;
+}
+
+body main .newCustomer .btnCreate {
+  color: #fff;
+  border-color: #17a8a3;
+  background-color: #17a8a3;
+  padding: 10px 40px;
+}
+
+body main .newCustomer .btnCreate:hover {
+  background-color: #0f726f;
+}
+
+body main .inputs {
+  width: 100%;
+  height: 45px;
+  margin-bottom: 20px;
+}
+
+body main label {
+  font-weight: 500;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+}
+
+body main h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+body main p {
+  margin-bottom: 35px;
+  line-height: 24px;
+  color: #787878;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+body footer {
+  font-size: 12px;
+}
+
+body footer .footerr {
+  padding: 42px 0 55px;
+  color: #787878;
+  background-color: #f7f9f9;
+}
+
+body footer .footerr .container-fluid {
+  height: auto;
+}
+
+body footer .footerr .container-fluid .row .col-md-6 .item_logo_1 {
+  display: block;
+  margin-bottom: 26px;
+}
+
+body footer .footerr .container-fluid .row .col-md-6 .item_logo_1 img {
+  width: 160px;
+}
+
+body footer .footerr .container-fluid .row .col-md-6 .item_logo_2 a {
+  color: #1e1e1e;
+}
+
+body footer .footerr .container-fluid .row .item-2 {
+  padding: 0 15px;
+  margin-bottom: 0;
+}
+
+body footer .footerr .container-fluid .row .item-2 h5 {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 500;
+  margin: 0 0 23px 0;
+  padding-top: 28px;
+  color: #1e1e1e;
+}
+
+body footer .footerr .container-fluid .row .item-2 ul {
+  padding: 0;
+}
+
+body footer .footerr .container-fluid .row .item-2 ul li {
+  display: block;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+body footer .footerr .container-fluid .row .item-2 ul li a {
+  color: #787878;
+  text-decoration: none;
+}
+
+body footer .footerr .container-fluid .row .item-2 ul li a:hover {
+  position: relative;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-decoration: underline;
+  color: black;
+}
+
+body footer .footerr .container-fluid .row .item-3 .social-icons {
+  margin: 0 0 25px;
+  padding-top: 3px;
+}
+
+body footer .footerr .container-fluid .row .item-3 .social-icons i {
+  color: #191919;
+  font-size: 23px;
+  margin-right: 8.5px;
+}
+
+body footer .footer_bottom {
+  padding: 35px 0;
+  color: #787878;
+  background-color: white;
+}
+
+body footer .footer_bottom .row {
+  margin-bottom: 15px;
+}
+
+body footer .footer_bottom .row .footer-copyright {
+  display: block;
+  text-align: left;
+  color: inherit;
+  line-height: 28px;
+}
+
+body footer .footer_bottom .row .footer-copyright p {
+  margin: 0 0 15px;
+}
+
+body footer .footer_bottom .row .payment-methods {
+  text-align: center;
+  display: block;
+}
+
+body footer .footer_bottom .row .payment-methods i {
+  font-size: 25px;
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 1100px) {
+  .footer-copyright {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  [class*='links'] {
+    display: none;
+  }
+  .item-2 {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .heading {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #787878;
+  }
+  .heading::after {
+    content: attr(data-content) "+";
+    position: absolute;
+    right: 0px;
+  }
+}
+
+@media only screen and (max-width: 1027px) {
+  .menu {
+    display: none;
+  }
+  .navBar::before {
+    content: url(../icons/shopping-bag-solid.svg);
+    position: absolute;
+    width: 20px;
+    height: 25px;
+    right: 3%;
+    top: 35%;
+  }
+  .navBar::after {
+    content: url(../icons/user-regular.svg);
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    top: 35%;
+    right: 6%;
+    padding-right: 10px;
+  }
+  .navBar .menuRight {
+    display: none !important;
+  }
+  .header {
+    padding-left: 37%;
+  }
+  .hamburgerMenu {
+    display: block !important;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+  }
+  .hamburgerMenu .fa-search {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 1167px) {
+  .menuRight {
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .loginTitle {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 1478px) {
+  .menu .headings li {
+    height: 40px;
+    margin-bottom: 0 !important;
+  }
+}
